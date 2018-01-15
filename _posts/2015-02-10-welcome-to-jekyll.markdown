@@ -3,8 +3,8 @@ layout: post
 title:  "hello jekyll!"
 date:   2015-02-10 15:14:54
 categories: jekyll
-tags: jekyll
-excerpt: 当年创建 jekyll 时默认的一篇文章，没什么意义，我也一直没删除，留个纪念吧。
+tags: [jekyll,内测]
+excerpt: 当年创建 jekyll 时默认的一篇文章,Gaohaoyang的模板一直没删除，我也且留着，作为对模板作者的尊重吧。
 mathjax: true
 ---
 

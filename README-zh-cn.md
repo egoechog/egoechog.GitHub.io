@@ -1,4 +1,5 @@
 # 关于这个简洁明快的博客主题 🤘🤘🤘
+Forked from  **[http://gaohaoyang.github.io/](http://gaohaoyang.github.io/)**。若您喜欢这个博客主题，请给原作者gaohaoyang点star以示鼓励。
 
 [![GitHub stars](https://img.shields.io/github/stars/Gaohaoyang/gaohaoyang.github.io.svg)](https://github.com/Gaohaoyang/gaohaoyang.github.io/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/Gaohaoyang/gaohaoyang.github.io.svg)](https://github.com/Gaohaoyang/gaohaoyang.github.io/network)
