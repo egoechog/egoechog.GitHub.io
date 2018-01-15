@@ -1,0 +1,1 @@
+New blog is not done yet.
