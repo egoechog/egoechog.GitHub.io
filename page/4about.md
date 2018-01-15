@@ -10,7 +10,7 @@ type: page
 {:toc}
 ## 关于我
 
-I am a software engineer located in Beijing,China. I am working in EDA industry over 10 years and I am interesting in techniques like Parallel Computing, Data Analyzing, and GUI development.
+I am a software engineer located in Beijing,China. I am working in EDA industry for over 10 years and I am interesting in techniques like Parallel Computing, Data Analyzing, and GUI development.
 I like playing badminton and reading, I am a history buff and a big fan of maps and geography.
 
 ## 联系我
