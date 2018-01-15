@@ -9,16 +9,11 @@ type: page
 * content
 {:toc}
 
+## Pilot Projects:
+- [StockMate](https://egoechog.github.io/stockmate/)
+- [TclTk Scripts](https://egoechog.github.io/TclTk/)
+
 ## 工具
-
-* [图床 https://sm.ms/](https://sm.ms/)
-
-    有 API 可用。
-
-* [新浪微博图床 Chrome扩展](https://github.com/Suxiaogang/WeiboPicBed)
-
-* [Unix 时间戳 Unix timestamp](http://tool.chinaz.com/Tools/unixtime.aspx)
-
 - [在线正则表达式匹配](https://regex101.com/)
     - 这个功能更强大一点，能清楚的区分出贪婪和懒惰正则。
 - [http://regexr.com/](http://regexr.com/)
@@ -33,44 +28,7 @@ type: page
 
 * [JavaScript Promise迷你书 -azu](http://liubin.org/promises-book/)
 
-* [JavaScript 秘密花园](http://bonsaiden.github.io/JavaScript-Garden/zh/)
-
 * [JavaScript 设计模式 系列 AlloyTeam](http://www.alloyteam.com/2012/10/common-javascript-design-patterns/)
-
-    ES2015规范
-
-- [http://es6katas.org/](http://es6katas.org/)
-
-    Learn ES6 by doing it. Fix failing tests. Keep all learnings.
-
-* [30分钟掌握ES6/ES2015核心内容（上）](http://segmentfault.com/a/1190000004365693)
-
-* [30分钟掌握ES6/ES2015核心内容（下）](http://segmentfault.com/a/1190000004368132)
-
-* [《ECMAScript 6入门》 -阮一峰](https://github.com/ruanyf/es6tutorial)
-
-* [EcmaScript6 全规范（含node） -ouvens](https://github.com/ouvens/es6-code-style-guide)
-
-
-## 框架&脚手架
-
-### webpack
-
-* [Webpack 中文指南 -赵达](https://www.gitbook.com/book/zhaoda/webpack/details)
-
-    上述傻瓜指南的原始出处 [https://github.com/vikingmute/webpack-for-fools](https://github.com/vikingmute/webpack-for-fools) Webpack傻瓜式指南
-
-* [后端程序员的 JavaScript 之旅 - 模块化（一）](http://lishaopeng.com/2016/02/05/js-module/)
-* [后端程序员的 JavaScript 之旅 - 模块化（二）](http://lishaopeng.com/2016/02/11/js-module2/)
-* [后端程序员的 JavaScript 之旅 - 模块化（三）](http://lishaopeng.com/2016/02/19/js-module3/)
-
-* [CommonJS 规范 -来自 阮一峰 JavaScript 标准参考教程(alpha)](http://javascript.ruanyifeng.com/nodejs/module.html)
-
-## other articles
-
-- [<head> Cheat Sheet](http://gethead.info/)
-* [将footer固定在页面底部的实现方法](https://segmentfault.com/a/1190000004453249)
-- [HTML5 视频 By Pete LePage](https://www.html5rocks.com/zh/tutorials/video/basics/)
 
 ## 编辑器
 

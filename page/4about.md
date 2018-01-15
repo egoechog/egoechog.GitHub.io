@@ -15,14 +15,14 @@ I like playing badminton and reading, I am a history buff and a big fan of maps 
 
 ## 联系我
 
-* GitHub：[Gaohaoyang](https://github.com/egoechog)
+* GitHub：[HawaiiSnowman](https://github.com/egoechog)
 * email：egoechog@163.com
 * [Weibo](http://weibo.com/3115521wh)
 * [知乎](https://www.zhihu.com/people/egoechog)
 
 ## 关于本站
 
-**若您想使用这个 jekyll 博客主题，请访问：[https://github.com/Gaohaoyang/gaohaoyang.github.io](https://github.com/Gaohaoyang/gaohaoyang.github.io)**
+**该主题fork自GitHub.若您想使用这个 jekyll 博客主题，请访问原作者的GitHub：[https://github.com/Gaohaoyang/gaohaoyang.github.io](https://github.com/Gaohaoyang/gaohaoyang.github.io)**
 
 ~欢迎使用~
 
