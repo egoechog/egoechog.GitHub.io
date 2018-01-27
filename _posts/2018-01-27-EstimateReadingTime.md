@@ -111,7 +111,7 @@ Google学习了一下，现代浏览器都已经支持svg图片格式了，所�
 
 *   嵌入base64编码的svg图片
 
-茴香豆的另一种写法是使用base64编码的图片，这样别人即使查看你的html源码也只能看到一串火星文，搜索引擎也拿它没办法,高冷！关于怎么玩转base64编码的图片，感兴趣的同学可以参考[Base64 encoding images](https://varvy.com/pagespeed/base64-images.html)。把上述svg图片base64加密之后, 用*img*标签就可以将其嵌入到html,达到同样的效果:
+茴香豆“茴”字的另一种写法是使用base64编码的图片，这样别人即使查看你的html源码也只能看到一串火星文，搜索引擎也拿它没办法,高冷！关于怎么玩转base64编码的图片，感兴趣的同学可以参考[Base64 encoding images](https://varvy.com/pagespeed/base64-images.html)。把上述svg图片base64加密之后, 用*img*标签就可以将其嵌入到html,达到同样的效果:
 
 ```html
 <img height="16" width="16" src="data:image/svg+xml;base64,PHN2ZyBpZD0iaS1jbG9jayIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSIwIDAgMzIgMzIiIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJjdXJyZW50Y29sb3IiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSIyIj4KICAgIDxjaXJjbGUgY3g9IjE2IiBjeT0iMTYiIHI9IjE0IiAvPgogICAgPHBhdGggZD0iTTE2IDggTDE2IDE2IDIwIDIwIiAvPgo8L3N2Zz4=" />
