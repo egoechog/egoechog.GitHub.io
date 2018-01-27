@@ -34,14 +34,14 @@ description:
 ```
 找到自己博客的layout模板文件后，步骤3一行代码就能搞定:
 ```html
-{% include read_time.html %}
+{% include reading_time.html %}
 ```
 
 ####方案移植问题多多
 
 纸上得来终觉浅，缘知此事要躬行。把上述代码移植到我的博客模板中试试看吧。
 
-我的博客模板fork自[HyG's Blog](https://github.com/Gaohaoyang/gaohaoyang.github.io)(感谢原博主[Gaohaoyang](https://github.com/Gaohaoyang)), 公共的html文件都放在\_includes文件夹，所以我把reading_time.html也放到了这个文件夹里。因为经常会在博客上贴出代码,所以我把阅读速度从360字/秒调低了一些到260字/秒;然后在\_layout文件内，找到博客正文layout的模板文件post.html,在tag之后插入reading_time.html:
+我的博客模板fork自[HyG's Blog](https://github.com/Gaohaoyang/gaohaoyang.github.io)(感谢原博主[Gaohaoyang](https://github.com/Gaohaoyang)), Jekyll模板公共的html文件都放在\_includes文件夹，所以我把reading_time.html也放到了这个文件夹里。因为经常会在博客上贴出代码,所以我把阅读速度从360字/秒调低了一些到260字/秒;然后在\_layout文件内，找到博客正文layout的模板文件post.html,在tag之后插入reading_time.html:
 
 ```html
 <div class="label-card">
@@ -67,7 +67,7 @@ Jekyll内建支持的filter 'number_of_words'不能准确统计中文字数，�
 
 再次push代码到github,这次中文博客正文所需的阅读时间果然可以准确显示了，但是我的博客首页是一个按发布时间显示正文摘要的索引页，怎么才能把reading_time也显示出在索引页上呢？
 
-好在我fork的索引模板已经支持给每篇摘要显示category和tag了，参考一下\_includes/tag.html和\_includes/category.html模板文件，原来可以通过判断*post*变量是否存在来区分page和post。那么对reading_time.html做如下改动，就可以同时支持索引页和博客正文页了:
+好在我fork的索引模板已经支持给每篇摘要显示category和tag了，参考一下/_includes/tag.html和/_includes/category.html模板文件，原来可以通过判断*post*变量是否存在来区分page和post。那么对reading_time.html做如下改动，就可以同时支持索引页和博客正文页了:
 
 ```html
 {% if post %}
