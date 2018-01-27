@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 不使用任何插件让中文博客文章也能显示"阅读需要的时间"
+title: 不使用任何插件,也能让中文博客文章显示"阅读需要的时间"
 date: 2018-1-28
 categories: jekyll
 tags: [jekyll]
