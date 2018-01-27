@@ -1,9 +1,9 @@
 ---
 layout: post
-title: 不使用任何插件让中文博客文章也能显示“阅读需要的时间”
+title: "不使用任何插件让中文博客文章也能显示阅读需要的时间"
 date: 2018-1-28
-categories: Jekyll
-tags: [Jekyll]
+categories: jekyll
+tags: [jekyll]
 description: 
 ---
 
@@ -67,7 +67,7 @@ Jekyll内建支持的filter 'number_of_words'不能准确统计中文字数，�
 
 再次push代码到github,这次中文博客正文所需的阅读时间果然可以准确显示了，但是我的博客首页是一个按发布时间显示正文摘要的索引页，怎么才能把reading_time也显示出在索引页上呢？
 
-好在我fork的索引模板已经支持给每篇摘要显示category和tag了，参考一下\_includes/tag.html和\_includes/category.html模板文件，原来可以用语句*{% if post %}*来区分page和post。那么对reading_time.html做如下改动，就可以同时支持索引页和博客正文页了:
+好在我fork的索引模板已经支持给每篇摘要显示category和tag了，参考一下\_includes/tag.html和\_includes/category.html模板文件，原来可以通过判断*post*变量是否存在来区分page和post。那么对reading_time.html做如下改动，就可以同时支持索引页和博客正文页了:
 
 ```html
 {% if post %}
