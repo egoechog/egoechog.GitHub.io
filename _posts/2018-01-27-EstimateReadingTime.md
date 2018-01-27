@@ -109,5 +109,5 @@ Google学习了一下，现代浏览器都已经支持svg图片格式了，所�
 #### 最终效果
 
 最后，贴上我的博客截图效果:
-![mins to read](/img/reading_time/readtime.png)
+![mins to read](/img/posts/readingtime/blogsnap.png)
 如果想获取完整源代码,请移步[reading_time](https://raw.githubusercontent.com/egoechog/egoechog.GitHub.io/master/_includes/reading_time.html)。
