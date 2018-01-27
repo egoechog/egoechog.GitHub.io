@@ -75,7 +75,7 @@ Jekyll内建支持的filter 'number_of_words'不能准确统计中文字数，�
 {% endif %}
 ```
 
-然后借鉴category和tag的显示代码，相应地在/index.html模板文件中include reading_time.html,这样在博客首页的摘要上方就也能看到博客正文所需的阅读时间了:
+然后借鉴category和tag的显示代码，相应地在/index.html模板文件中include reading_time.html,这样就能在博客首页的博文摘要上方，看到正文所需的阅读时间了:
 
 ```html
 <div class="label-card">
@@ -109,7 +109,5 @@ Google学习了一下，现代浏览器都已经支持svg图片格式了，所�
 #### 最终效果
 
 最后，贴上我的博客截图效果:
-！[mins to read](/img/reading_time/readtime.png)
+![mins to read](/img/reading_time/readtime.png)
 如果想获取完整源代码,请移步[reading_time](https://raw.githubusercontent.com/egoechog/egoechog.GitHub.io/master/_includes/reading_time.html)。
-
-

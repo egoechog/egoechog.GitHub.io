@@ -22,7 +22,7 @@ I like playing badminton and reading, I am a history buff and a big fan of maps 
 
 ## 关于本站主题
 
-**该主题fork自GitHub.若您想使用这个 jekyll 博客主题，或对该主题有任何问题或建议，请访问主题原作者的GitHub：[https://github.com/Gaohaoyang/gaohaoyang.github.io](https://github.com/Gaohaoyang/gaohaoyang.github.io)**
+**该主题fork自GitHub,并做了稍许改动以支持显示博客文章所需的阅读时间。若您想使用这个 jekyll 博客主题，或对该主题有任何问题或建议，请访问主题原作者的GitHub：[https://github.com/Gaohaoyang/gaohaoyang.github.io](https://github.com/Gaohaoyang/gaohaoyang.github.io)**
 
 
 ## Comments
