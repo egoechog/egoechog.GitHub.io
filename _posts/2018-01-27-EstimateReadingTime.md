@@ -4,14 +4,14 @@ title: 不使用任何插件,也能让中文博客文章显示"阅读需要的�
 date: 2018-1-28
 categories: jekyll
 tags: [jekyll]
-excerpt: 使用Jekyll模板在github pages上搭建自己的博客很方便，但是貌似很多模板都不支持在博客上显示“阅读需要的时间”。那有什么简单方法可以很快地给自己的博客添加这个功能呢？中文博客又有什么特殊情况要处理？
+excerpt: 使用Jekyll模板在github pages上搭建自己的博客很方便，但是貌似很多模板都不支持在博客上显示“阅读需要的时间”。那有什么简单方法可以给自己的博客添加这个功能呢？中文博客又有什么特殊情况要处理？
 ---
 
-最近尝试着在github pages上套用大牛们的模板搭建了自己的技术博客，感觉很好玩。以前很羡慕别人的博客如何酷炫，如今在github上看到谁的博客风格比较对自己的胃口, fork一下把Repository改成自己的username.github.io就可以马上给自己的博客大变身了，简直不能再任性。 最近fork了几套模板，但我偶尔发现有些博客上可以自动显示“阅读需要的时间“，而我clone的博客模板上却没有这个贴心的小功能，怎么才能把它移植过来呢？
+最近尝试着在github pages上套用大牛们的模板搭建了自己的技术博客，感觉很好玩。以前很羡慕别人的博客如何酷炫，如今在github上看到谁的博客风格比较对自己的胃口, clone一下把Repository改成自己的username.github.io,在修改一下个人信息，自己的博客马上就大变身了，简直不能再任性。但我偶尔发现有些博客上可以自动显示“阅读需要的时间“，而我clone的博客模板上却没有这个贴心的小功能，怎么才能把它移植过来呢？
 
 #### 基本原理探究
 
-说干就干，简单一搜索，就找到了这篇文章[Jekyll: Reading time without plugins](https://carlosbecker.com/posts/jekyll-reading-time-without-plugins/)，原理很简单:
+简单一搜索，就找到了这篇文章[Jekyll: Reading time without plugins](https://carlosbecker.com/posts/jekyll-reading-time-without-plugins/)，原理很简单:
 
 1.  统计博客文字量
 2.  设定一个经验阅读速度，计算出阅读时间
