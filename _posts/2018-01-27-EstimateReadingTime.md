@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "不使用任何插件让中文博客文章也能显示阅读需要的时间"
+title: 不使用任何插件让中文博客文章也能显示"阅读需要的时间"
 date: 2018-1-28
 categories: jekyll
 tags: [jekyll]
@@ -23,6 +23,7 @@ description:
 代码也很简单，即使没有接触过html/css语言，理解起来也没有什么困难。
 步骤1,2的代码可以放在一个单独的reading_time.html文件里，内容如下:
 ```html
+{% raw %}
 <span class="reading-time" title="Estimated read time">
   {% assign words = content | number_of_words %}
   {% if words < 360 %}
@@ -31,10 +32,13 @@ description:
     {{ words | divided_by:180 }} mins
   {% endif %}
 </span>
+{% endraw %}
 ```
 找到自己博客的layout模板文件后，步骤3一行代码就能搞定:
 ```html
+{% raw %}
 {% include reading_time.html %}
+{% endraw %}
 ```
 
 ####方案移植问题多多
@@ -44,9 +48,11 @@ description:
 我的博客模板fork自[HyG's Blog](https://github.com/Gaohaoyang/gaohaoyang.github.io)(感谢原博主[Gaohaoyang](https://github.com/Gaohaoyang)), Jekyll模板公共的html文件都放在\_includes文件夹，所以我把reading_time.html也放到了这个文件夹里。因为经常会在博客上贴出代码,所以我把阅读速度从360字/秒调低了一些到260字/秒;然后在\_layout文件内，找到博客正文layout的模板文件post.html,在tag之后插入reading_time.html:
 
 ```html
+{% raw %}
 <div class="label-card">
 	{% include reading_time.html %}
-</div>            
+</div> 
+{% endraw %}
 ```
 
 我的本机没有安装Jekyll环境，所以直接push移植代码到github. 再次点开我的博客，发现每篇博客的tag右边都显示出了 "1 min",移植一次成功！
@@ -59,8 +65,10 @@ description:
 
 Jekyll内建支持的filter 'number_of_words'不能准确统计中文字数，好在可以使用Liquid 的'size' filter绕开这个问题。为了统计更精确，在计算之前最好把所有html标记和空行也忽略掉:
 
-```
+```html
+{% raw %}
 {% assign words = content | strip_html | strip_newlines | split: "" | size %}
+{% endraw %}
 ```
 
 ##### 支持博客正文页和索引页
@@ -70,19 +78,23 @@ Jekyll内建支持的filter 'number_of_words'不能准确统计中文字数，�
 好在我fork的索引模板已经支持给每篇摘要显示category和tag了，参考一下/_includes/tag.html和/_includes/category.html模板文件，原来可以通过判断*post*变量是否存在来区分page和post。那么对reading_time.html做如下改动，就可以同时支持索引页和博客正文页了:
 
 ```html
+{% raw %}
 {% if post %}
 	{% assign words = post.content | strip_html | strip_newlines | split: "" | size %}
 {% else %}
 	{% assign words = page.content | strip_html | strip_newlines | split: "" | size %}
 {% endif %}
+{% endraw %}
 ```
 
 然后借鉴category和tag的显示代码，相应地在/index.html模板文件中include reading_time.html,这样就能在博客首页的博文摘要上方，看到正文所需的阅读时间了:
 
 ```html
+{% raw %}
 <div class="label-card">
     {% include reading_time.html %}
 </div>
+{% endraw %}
 ```
 
 #####添加时钟图标
