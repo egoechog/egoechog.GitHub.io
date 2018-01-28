@@ -11,7 +11,7 @@ excerpt: 使用Jekyll模板在github pages上搭建自己的博客很方便，�
 
 #### 基本原理探究
 
-说干就干，简单一搜索，就找到了这篇文章[Jekyll: Reading time without plugins](https://carlosbecker.com/posts/jekyll-reading-time-without-plugins/)，原理很简单:
+简单一搜索，就找到了这篇文章[Jekyll: Reading time without plugins](https://carlosbecker.com/posts/jekyll-reading-time-without-plugins/)，原理很简单:
 
 1.  统计博客文字量
 2.  设定一个经验阅读速度，计算出阅读时间
@@ -98,7 +98,7 @@ Jekyll内建支持的filter 'number_of_words'不能准确统计中文字数，�
 
 再仔细看看这个小功能,怎么感觉还是有什么地方怪怪的?对了,category和tag都有图标,reading_time也应该有图标风格才能保持一致呀。 怎么添加图标呢？
 
-*   直接嵌入svg
+* 直接嵌入svg
 
 Google学习了一下，现代浏览器都已经支持svg图片格式了，所以最简单的办法就是找一张svg格式的时钟图标文件，复制svg文件内容，直接用svg标签内嵌到html中。svg矢量图片可以无损缩放，所以不用担心图片的尺寸大小，在svg标签中指定宽高16*16,图标自动就缩放合适了。代码如下:
 
@@ -109,7 +109,7 @@ Google学习了一下，现代浏览器都已经支持svg图片格式了，所�
 </svg>
 ```
 
-*   嵌入base64编码的svg图片
+* 嵌入base64编码的svg图片
 
 茴香豆的另一种写法是使用base64编码的图片，这样别人即使查看你的html源码也只能看到一串火星文，搜索引擎也拿它没办法,高冷！关于怎么玩转base64编码的图片，感兴趣的同学可以参考[Base64 encoding images](https://varvy.com/pagespeed/base64-images.html)。把上述svg图片base64加密之后, 用*img*标签就可以将其嵌入到html,达到同样的效果:
 
