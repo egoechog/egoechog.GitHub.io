@@ -4,24 +4,24 @@ title: 解读Scrum燃尽图
 date: 2018-1-14
 categories: project_management
 tags: [scrum,project_management]
-description: Scrum burndown chart有什么门道？
+description: 敏捷开发流程中，从Scrum burndown chart能看出什么门道？
 ---
 
 我的[Understand the burndown chart](http://www.methodsandtools.com/archive/scrumburndown.php)读书笔记。
 
-#### 什么是燃尽图：
+#### 什么是燃尽图：
 
 在敏捷开发中，燃尽图主要用于显示某一特定时间段内团队的剩余工作量，从而了解团队状态和项目进度。
 
-#### 燃尽图其实很简单：
+#### 燃尽图其实很简单：
 * X轴显示工作量天数
 * Y轴显示剩余工作量
   不要使用Y轴来显示backlog数量,因为每个backlog的工作量都不一样。
 * 以实际剩余工作量作图(实线)
 * 以理想工作量作为对照(虚线)
 
-#### 燃尽图能告诉我们什么？
- <!--more-->
+#### 燃尽图能告诉我们什么？
+
 1.  理想团队
 
     ![IdealTeam](/img/posts/burndownchart/IdealTeam.jpg)

@@ -6,9 +6,10 @@
 {% assign words = page.content | strip_html | strip_newlines | split: "" | size %}
 {% endif %}
 <span class="reading-time" title="Estimated read time">
+    <i class="fa fa-clock-o"></i>
     {% if words <= 250 %}
-        <i class="fa fa-clock-o"></i>1 min to read
+        1 min to read
     {% else %}
-        <i class="fa fa-clock-o"></i>{{ words | divided_by:250 }} mins to read
+        {{ words | divided_by:250 }} mins to read
     {% endif %}
 </span>
