@@ -2,9 +2,9 @@
 layout: post
 title: 解读Scrum燃尽图
 date: 2018-1-14
-categories: project_management
-tags: [scrum,project_management]
-description: 敏捷开发流程中，从Scrum burndown chart能看出什么门道？
+categories: [project management]
+tags: [scrum,project management]
+excerpt: 敏捷开发流程中，从Scrum burndown chart能看出什么门道？
 ---
 
 我的[Understand the burndown chart](http://www.methodsandtools.com/archive/scrumburndown.php)读书笔记。
