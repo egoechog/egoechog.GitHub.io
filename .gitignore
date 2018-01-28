@@ -5,3 +5,7 @@ _site
 .idea
 .DS_Store
 *.md~
+_posts/YYYY-MM-DD-post.md
+_config.yml~
+.gitignore
+.gitignore

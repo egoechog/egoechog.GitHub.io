@@ -116,7 +116,19 @@ Google学习了一下，现代浏览器都已经支持svg图片格式了，所�
 ```html
 <img height="16" width="16" src="data:image/svg+xml;base64,PHN2ZyBpZD0iaS1jbG9jayIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSIwIDAgMzIgMzIiIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJjdXJyZW50Y29sb3IiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSIyIj4KICAgIDxjaXJjbGUgY3g9IjE2IiBjeT0iMTYiIHI9IjE0IiAvPgogICAgPHBhdGggZD0iTTE2IDggTDE2IDE2IDIwIDIwIiAvPgo8L3N2Zz4=" />
 ```
+* 使用Font Awesome图标
 
+作为html小白，我刚为找到了两种“茴”字的写法沾沾自喜没多久，就发现原有的tag.html和categories.html文件并没有使用我找到的两种方法，而是用以下标记显示图标：
+```html
+<span class="pageTag">
+  <i class="fa fa-tags"></i>{{ tags }}
+</span>
+```
+fa是什么东东？fa-tags在哪里？为什么我在本地搜索不到，也没有看到引用链接？搜索了解了一下html `<i>`标记，原来fa代表的是Font Awesome icons,只需要把下面几行代码放在html `<head>`内,不需要下载和安装，就可以用上述`<span>`和`<i>`标记在html中添加图标，真是再方便不过了。
+```html
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+```
+回过头又看了一下我博客模板的\_includes/head.html文件,果然发现了对font-awesome的引用。看来对html/css不了解如我者，尝试自定义github pages免不了会走很多弯路呀。
 #### 最终效果
 
 最后，贴上我的博客截图效果:
